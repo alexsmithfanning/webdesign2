@@ -8,12 +8,39 @@
     font-style: normal;
 }
 
-article, aside, body, dd, div, dl, dt, figcaption, figure, footer, h1, h2, h3, header, li, nav, ol, p, section, table, th, td, ul {
+article,
+aside,
+body,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+header,
+li,
+nav,
+ol,
+p,
+section,
+table,
+th,
+td,
+ul {
     margin: 0;
     padding: 0;
 }
 
-article, aside, figure, header, footer, nav {
+article,
+aside,
+figure,
+header,
+footer,
+nav {
     display: block;
 }
 
@@ -174,18 +201,22 @@ a:active {
     color: #082008;
 }
 
-#mainnav a:link, #skipnav a:link {
+#mainnav a:link,
+#skipnav a:link {
     color: white;
 }
 
-#mainnav a:visited, #skipnav a:visited {
+#mainnav a:visited,
+#skipnav a:visited {
     color: #ffffcc;
 }
 
-#mainnav a:hover, #skipnav a:hover {
+#mainnav a:hover,
+#skipnav a:hover {
     text-decoration: underline;
 }
 
-#mainnav a:active, #skipnav a:active {
+#mainnav a:active,
+#skipnav a:active {
     color: white;
 }

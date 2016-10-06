@@ -16,12 +16,35 @@
     font-style: normal;
 }
 
-article, aside, body, dd, div, dl, dt, figcaption, figure, footer, h1, h2, h3, li, nav, ol, p, section, table, th, td, ul {
+article,
+aside,
+body,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+li,
+nav,
+ol,
+p,
+section,
+table,
+th,
+td,
+ul {
     margin: 0;
     padding: 0;
 }
 
-figure, footer, nav {
+figure,
+footer,
+nav {
     display: block;
 }
 
@@ -99,7 +122,9 @@ footer p {
     padding: 0.5em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: LatinModernSans10Bold, arial, helvetica, sans-serif;
 }
 
@@ -243,8 +268,9 @@ a:active {
     color: #ffcc00;
 }
 
+
 /* New CSS below this line. */
 
 article li::first-line {
-  font-weight: bold;
+    font-weight: bold;
 }

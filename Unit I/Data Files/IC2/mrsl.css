@@ -1,11 +1,36 @@
 /* Murfreesboro Regional Soccer League */
 
-article, aside, body, dd, div, dl, dt, figcaption, figure, footer, h1, h2, h3, header, li, nav, ol, p, section, table, th, td, ul {
+article,
+aside,
+body,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+header,
+li,
+nav,
+ol,
+p,
+section,
+table,
+th,
+td,
+ul {
     margin: 0;
     padding: 0;
 }
 
-article, figure, header, footer {
+article,
+figure,
+header,
+footer {
     display: block;
 }
 
@@ -28,12 +53,15 @@ figure img {
     display: block;
 }
 
-h1, #affiliation {
+h1,
+#affiliation {
     background: rgb(140, 198, 63);
     background: rgba(140, 198, 63, 0.6);
 }
 
-h1, h2, #affiliation {
+h1,
+h2,
+#affiliation {
     text-align: center;
     padding: 0.1em;
     font-family: georgia, "times new roman", times, serif;
@@ -208,5 +236,6 @@ a:active {
 #skipnav a:active {
     color: white;
 }
+
 
 /* New CSS below this line. */
