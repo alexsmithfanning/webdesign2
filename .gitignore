@@ -1,0 +1,9 @@
+# Archives and other compressed media
+*.zip
+*.7z
+*.tar.xz
+*.tar.gz
+*.tar.bz2
+*.txz
+*.tgz
+*.tbz
