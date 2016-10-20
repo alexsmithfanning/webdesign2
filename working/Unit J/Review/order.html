@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Big J&#39;s Deep Dish Pizza - Order</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="bigj.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="bigjform.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="bjprint.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="scripts/modernizr-1.6.min.js"></script>
+</head>
+
+<body>
+	<p id="skipnav"><a href="#logo"><span id="skiplink">Skip navigation</span></a></p>
+	<div id="box">
+		<nav>
+			<ul id="mainnav">
+				<li id="navlink1"><a href="index.html">Home</a></li>
+				<li id="navlink2"><a href="order.html">Order</a></li>
+				<li id="navlink3"><a href="bigjmenu.pdf">Menu</a></li>
+				<li id="navlink4"><a href="location.html">Locations</a></li>
+			</ul>
+		</nav>
+		<h1 id="logo">
+			<a href="index.html"><img src="images/bigjs.gif" width="225" height="225" alt="Big J's Deep Dish Pizza" title="" /></a>
+		</h1>
+		<article class="content">
+			<h2 id="main">Order Online</h2>
+			<form>
+				<fieldset id="deliveryinfo">
+					<legend><span>Delivery Information</span></legend>
+				</fieldset>
+				<fieldset id="orderinfo">
+					<legend><span>Order</span></legend>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="nameinput" placeholder="First and last name" />
+					<label for="address">Street Address</label>
+					<input type="text" name="address" id="addrinput" placeholder="Building number and street" />
+					<label for="city">City</label>
+					<input type="text" name="city" id="cityinput" />
+					<label for="email">Email</label>
+					<input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+					<label for="phone">Phone</label>
+					<input type="text" name="phone" id="phoneinput" />
+					<fieldset id="crustbox">
+						<legend>Crust</legend>
+					</fieldset>
+					<fieldset id="sizebox">
+						<legend>Size</legend>
+					</fieldset>
+					<fieldset id="toppingbox">
+						<legend>Topping(s)</legend>
+					</fieldset>
+				</fieldset>
+				<fieldset id="additionalinfo">
+					<legend><span>Special Instructions</span></legend>
+					<label for="instructions">Special requests, delivery details</label>
+					<textarea id="instructions" name="instructions" rows="3" cols="60"></textarea>
+				</fieldset>
+				<fieldset id="submitbutton">
+				</fieldset>
+			</form>
+		</article>
+		<footer>
+			<div id="foot1">
+				<p>150 St. Joseph St.<br />
+					<span class="callout">(416) 555-3337</span></p>
+			</div>
+			<div id="foot2">
+				<p>783 St. Clair Ave. W<br />
+					<span class="callout">(416) 555-2047</span></p>
+			</div>
+			<div id="foot3">
+				<p>360 Dundas St. W<br />
+					<span class="callout">(416) 555-1011</span></p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
