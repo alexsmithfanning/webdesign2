@@ -50,7 +50,6 @@ legend span {
   border: none;
 }
 
-
 /* New CSS below this line. */
 
 #contactinfo label {
@@ -80,4 +79,16 @@ textarea:focus {
 
 #roombox label {
   margin-right: 25px;
+}
+
+#submit {
+  background: #e3d5ba;
+  font-size: 1.25em;
+}
+
+#submitbutton {
+  border: none;
+  background: #6a91ca;
+  padding: 0.5em 0 0 0;
+  text-align: center;
 }
