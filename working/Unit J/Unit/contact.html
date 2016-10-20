@@ -35,6 +35,63 @@
 		</nav>
 		<article id="content">
 			<h2 id="main">Contact Us</h2>
+			<form>
+				<fieldset id="contactinfo">
+					<legend><span>Contact Information</span></legend>
+					<label>
+            Name
+            <input type="text" name="name" id="nameinput" placeholder="First and last name" />
+          </label>
+					<label>
+            Email
+            <input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+          </label>
+					<label>
+            Phone
+            <input type="text" name="phone" id="phoneinput" />
+          </label>
+				</fieldset>
+				<fieldset id="reserveinfo">
+					<legend><span>Reservation Information</span></legend>
+					<fieldset id="checkin">
+						<legend>Check-in date</legend>
+					</fieldset>
+					<fieldset id="checkout">
+						<legend>Check-out date</legend>
+					</fieldset>
+					<fieldset id="roombox">
+						<legend>Room(s) to reserve</legend>
+						<label for="sun">
+              <input type="checkbox" id="sun" value="Sun Room" name="room" />
+              Sun Room
+              </label>
+						<label for="reed">
+              <input type="checkbox" id="reed" value="Reed Room" name="room" />
+              Reed Room
+              </label>
+						<label for="tree">
+              <input type="checkbox" id="tree" value="Treehouse" name="room" />
+              Treehouse
+              </label>
+						<label for="garden">
+              <input type="checkbox" id="garden" value="Garden Room" name="room" />
+              Garden Room
+              </label>
+					</fieldset>
+					<fieldset id="occasionbox">
+						<legend>What's the occasion for your visit?</legend>
+					</fieldset>
+				</fieldset>
+				<fieldset id="additionalinfo">
+					<legend><span>Additional Information</span></legend>
+					<label>
+            Feedback, special requests, or other information
+            <textarea id="feedback" name="feedback" rows="4" cols="55"></textarea>
+          </label>
+				</fieldset>
+				<fieldset id="submitbutton">
+				</fieldset>
+			</form>
 		</article>
 		<footer>
 			<p id="contact">45 Marsh Grass Ln. <img src="images/flourish.gif" width="16" height="16" alt="" /> Marble, MN 55764 <img src="images/flourish.gif"
