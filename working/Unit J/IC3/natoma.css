@@ -1,5 +1,12 @@
 ﻿/* Hotel Natoma */
 
+/*
+ * Copyright © 2016-2017 Alex Smith-Fanning
+ *
+ * Copying this text directly is not allowed, but using it for reference and
+ * self-help is permitted as long as it isn't serving a malicious purpose.
+ */
+
 @font-face {
   font-family: 'PTSansCaption';
   src: url('fonts/PTC55F-webfont.eot');
@@ -230,3 +237,5 @@ a:active {
 #skipnav a:active {
   color: white;
 }
+
+/* New CSS below this line. */

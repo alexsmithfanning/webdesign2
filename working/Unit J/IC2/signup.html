@@ -1,37 +1,96 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Murfreesboro Regional Soccer League - Signup Form</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="mrsl.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="mrsprint.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <!--[if lt IE 9]>
-      <script src="scripts/semantic.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div id="box">
-      <p id="skipnav"><a href="#main"><span id="skiplink">Skip navigation</span></a></p>
-      <header>
-        <h1>Murfreesboro Recreational Soccer League</h1>
-        <p id="affiliation">Part of the North American Recreational Soccer Association</p>
-        </header>
-      <nav>
-        <ul id="mainnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="started.html">Getting Started</a></li> 
-          <li><a href="signup.html">Signup Form</a></li> 
-          <li><a href="schedule.html">Schedules</a></li>
-          <li><a href="http://bit.ly/8Y5YyA" target="_blank">Field Location</a></li>
-        </ul>
-      </nav>
-      <article>
-        <h2 id="main">Signup Form</h2>
-      </article>
-      <footer>
-        <p id="contact">c/o Davies Sporting Goods<br />418 N. Sartoris St.<br />Murfreesboro, TN 37130<br />(615) 555-2255</p>
-      </footer>
-    </div>
-  </body>
+
+<!-- Copyright © 2016-2017 Alex Smith-Fanning -->
+<!-- Using this text for reference purposes is allowed as long as the intent is non-malicious. -->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Murfreesboro Regional Soccer League - Signup Form</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="mrsl.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="mrsprint.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- I refuse to use workarounds to support a dead browser. -->
+</head>
+
+<body>
+  <div id="box">
+    <p id="skipnav"><a href="#main"><span id="skiplink">Skip navigation</span></a></p>
+    <header>
+      <h1>Murfreesboro Recreational Soccer League</h1>
+      <p id="affiliation">Part of the North American Recreational Soccer Association</p>
+    </header>
+    <nav>
+      <ul id="mainnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="started.html">Getting Started</a></li>
+        <li><a href="signup.html">Signup Form</a></li>
+        <li><a href="schedule.html">Schedules</a></li>
+        <li><a href="http://bit.ly/8Y5YyA" target="_blank">Field Location</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2 id="main">Signup Form</h2>
+      <form>
+        <fieldset id="contactinfo">
+          <legend>Contact Information</legend>
+          <label for="fname">
+            First Name
+            <input type="text" name="fname" id="fnameinput" placeholder="First name" />
+          </label>
+          <label>
+            Last Name
+            <input type="text" name="lname" id="lnameinput" placeholder="Last name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+          </label>
+          <label>
+            Phone
+            <input type="text" name="phone" id="phoneinput" />
+          </label>
+        </fieldset>
+        <fieldset id="agebox">
+          <legend>Age Range</legend>
+          <select id="agerange" name="agerange">
+            <option value="D1">4-6</option>
+            <option value="D2">7-9</option>
+            <option value="D3">10-12</option>
+            <option value="D4">13-15</option>
+            <option value="D5">16-17</option>
+            <option value="D6">18-35</option>
+            <option value="D7">36-54</option>
+            <option value="D8">55+</option>
+          </select>
+        </fieldset>
+        <fieldset id="membershipbox">
+          <legend>Special Memberships</legend>
+          <label for="student">
+            <input type="checkbox" id="student" name="memberships" value="Student" />
+            Student
+          </label>
+          <label for="senior">
+            <input type="checkbox" id="senior" name="memberships" value="Senior" />
+            Senior
+          </label>
+        </fieldset>
+        <fieldset id="additionalinfo">
+          <legend>Additional Information</legend>
+          <label for="feedback">
+            Questions or special requests
+            <textarea id="feedback" name="feedback" rows="7" cols="50"></textarea>
+          </label>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="submit" id="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </article>
+    <footer>
+      <p id="contact">c/o Davies Sporting Goods<br />418 N. Sartoris St.<br />Murfreesboro, TN 37130<br />(615) 555-2255</p>
+    </footer>
+  </div>
+</body>
+
 </html>
