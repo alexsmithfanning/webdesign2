@@ -1,5 +1,12 @@
 /* Lakeland Reeds Bed and Breakfast -- Forms */
 
+/*
+ * Copyright © 2016-2017 Alex Smith-Fanning
+ *
+ * Copying this text directly is not allowed, but using it for reference and
+ * self-help is permitted as long as it isn't serving a malicious purpose.
+ */
+
 legend,
 #submit {
   font-family: MolengoRegular, arial, helvetica, sans-serif;
@@ -54,7 +61,7 @@ legend span {
   margin: 12px 0;
 }
 
-#deliverinfo input {
+#deliveryinfo input {
   position: absolute;
   left: 120px;
 }
@@ -69,4 +76,27 @@ legend span {
 
 input:focus, textarea:focus {
   background-color: #f99;
+}
+
+#submit {
+  background: red;
+  font-size: 1.25em;
+}
+
+/*
+ * Since for some reason the regular method of selecting an element didn't
+ * work, I'm using a class selector to select the area around the submission
+ * button.
+ *
+ * Using classes is the right way to do it anyway, I don't know why the book
+ * tells you to use identifications because it makes no sense. Indentifications
+ * can only be used once to indentify one thing, while classes can be assigned
+ * to multiple things.
+ */
+
+.ordersubmission {
+  background: black;
+  padding: 0.5em 0 0 0;
+  border: none;
+  text-align: center;
 }

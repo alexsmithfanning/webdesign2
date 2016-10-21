@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js">
+
+<!-- Copyright © 2016-2017 Alex Smith-Fanning -->
+<!-- Using this text for reference purposes is allowed as long as the intent is non-malicious. -->
 
 <head>
 	<meta charset="utf-8" />
@@ -30,35 +33,82 @@
 			<form>
 				<fieldset id="deliveryinfo">
 					<legend><span>Delivery Information</span></legend>
+					<label for="name">
+						Name
+						<input type="text" name="name" id="nameinput" placeholder="First and last name" />
+					</label>
+					<label for="address">
+						Street Address
+						<input type="text" name="address" id="addrinput" placeholder="Building number and street" />
+					</label>
+					<label for="city">
+						City
+						<input type="text" name="city" id="cityinput" />
+					</label>
+					<label for="email">
+						Email
+						<input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+					</label>
+					<label for="phone">
+						Phone
+						<input type="text" name="phone" id="phoneinput" />
+					</label>
 				</fieldset>
 				<fieldset id="orderinfo">
 					<legend><span>Order</span></legend>
 					<label for="name">Name</label>
-					<input type="text" name="name" id="nameinput" placeholder="First and last name" />
-					<label for="address">Street Address</label>
-					<input type="text" name="address" id="addrinput" placeholder="Building number and street" />
-					<label for="city">City</label>
-					<input type="text" name="city" id="cityinput" />
-					<label for="email">Email</label>
-					<input type="email" name="email" id="emailinput" placeholder="address@example.com" />
-					<label for="phone">Phone</label>
-					<input type="text" name="phone" id="phoneinput" />
 					<fieldset id="crustbox">
 						<legend>Crust</legend>
+						<label for="thin">
+							<input type="radio" name="crust" id="thin" value="Thin" />
+							Thin
+						</label>
+						<label for="thick">
+							<input type="radio" name="crust" id="thick" value="Deep Dish" checked="checked" />
+							Deep Dish
+						</label>
 					</fieldset>
 					<fieldset id="sizebox">
 						<legend>Size</legend>
+						<select id="size" name="size">
+              				<option value="small">Small</option>
+              				<option value="medium">Medium</option>
+              				<option value="large">Large</option>
+            			</select>
 					</fieldset>
 					<fieldset id="toppingbox">
 						<legend>Topping(s)</legend>
+						<label for="sun">
+              				<input type="checkbox" id="pepperoni" value="Pepperoni" name="toppings" />
+              				Pepperoni
+              			</label>
+						<label for="sausage">
+							<input type="checkbox" id="sausage" value="Sausage" name="toppings" />
+							Sausage
+						</label>
+						<label for="greenpep">
+              				<input type="checkbox" id="greenpep" value="Green Peppers" name="toppings" />
+              				Green Peppers
+              			</label>
+						<label for="onion">
+              				<input type="checkbox" id="onion" value="Onions" name="toppings" />
+              				Onions
+              			</label>
+						<label for="xcheese">
+              				<input type="checkbox" id="xcheese" value="Extra Cheese" name="toppings" />
+              				Extra Cheese
+              			</label>
 					</fieldset>
 				</fieldset>
 				<fieldset id="additionalinfo">
 					<legend><span>Special Instructions</span></legend>
-					<label for="instructions">Special requests, delivery details</label>
-					<textarea id="instructions" name="instructions" rows="3" cols="60"></textarea>
+					<label for="instructions">
+						Special requests, delivery details
+						<textarea id="instructions" name="instructions" rows="3" cols="60"></textarea>
+					</label>
 				</fieldset>
-				<fieldset id="submitbutton">
+				<fieldset id="submitbutton" class="ordersubmission">
+					<input type="submit" id="submit" value="Add to Cart" />
 				</fieldset>
 			</form>
 		</article>
