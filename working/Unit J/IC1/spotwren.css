@@ -1,5 +1,6 @@
 ﻿/* Spotted Wren Garden Center */
 
+
 /*
  * Copyright © 2016-2017 Alex Smith-Fanning
  *
@@ -284,4 +285,58 @@ a:active {
 
 #mainnav a:active {
   color: #ffcc00;
+}
+
+
+/* New CSS below this line. */
+
+form {
+  background-color: #6c6;
+  padding-top: 20px;
+}
+
+fieldset {
+  margin-bottom: 12px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+legend {
+  font-weight: bold;
+}
+
+#contactinfo label {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+}
+
+#contactinfo input {
+  position: absolute;
+  left: 130px;
+}
+
+#nameinput,
+#emailinput,
+#addrinput {
+  width: 30em;
+}
+
+#zipinput,
+#phoneinput {
+  width: 12em;
+}
+
+#jobtype label {
+  display: block;
+}
+
+#submitbutton {
+  border: none;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input:focus, textarea:focus {
+  background-color: #ff0;
 }

@@ -41,6 +41,89 @@
       <p>Take advantage of our experienced landscaping team to have the work done for you, or use the plan as the starting point
         for a do-it-yourself project.</p>
       <p>To get started, please provide the following information:</p>
+      <fieldset id="contactinfo">
+		  <legend>Contact Info</legend>
+		  <label for="name">
+			  Name
+			  <input type="text" name="name" id="nameinput" placeholder="First and last name" />
+		  </label>
+		  <label for="address">
+        Street Address
+        <input type="text" name="address" id="addrinput" />
+		  </label>
+		  <label for="zip">
+        Zip Code
+        <input type="text" name="zip" id="zipinput" />
+		  </label>
+		  <label for="email">
+        Email
+        <input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+		  </label>
+		  <label for="phone">
+        Phone
+        <input type="text" name="phone" id="phoneinput" />
+		  </label>
+      </fieldset>
+	  <fieldset id="timinginfo">
+      <legend>Best day(s) to schedule a visit</legend>
+      <label for="days">
+        <input type="checkbox" id="monday" name="days" value="Monday" />
+        Monday
+      </label>
+      <label for="days">
+        <input type="checkbox" id="tuesday" name="days" value="Tuesday" />
+        Tuesday
+      </label>
+      <label for="days">
+        <input type="checkbox" id="wednesday" name="days" value="Wednesday" />
+        Wednesday
+      </label>
+      <label for="thursday">
+        <input type="checkbox" id="thursday" name="days" value="Thursday" />
+        Thursday
+      </label>
+      <label for="days">
+        <input type="checkbox" id="friday" name="days" value="Friday" />
+        Friday
+      </label>
+      <label for="days">
+        <input type="checkbox" id="saturday" name="days" value="Saturday" />
+        Saturday
+      </label>
+      <label for="days">
+        <input type="checkbox" id="sunday" name="days" value="Sunday" />
+        Sunday
+      </label>
+	  </fieldset>
+	  <fieldset id="jobtype">
+      <legend>Project Area</legend>
+      <label for="area">
+        <input type="radio" name="area" value="House front" />
+        Front of House
+      </label>
+      <label for="area">
+        <input type="radio" name="area" id="border" value="Border" />
+        Border of Property
+      </label>
+      <label for="area"> 
+        <input type="radio" name="area" id="multiple" value="Multiple" />
+        Multiple Areas (please specify in Notes box below)
+      </label>
+      <label for="area">
+        <input type="radio" name="area" id="other" value="Other" />
+        Other (please specify in Notes box below)
+      </label>
+	  </fieldset>
+	  <fieldset id="additionalinfo">
+      <legend>Additional Information</legend>
+      <label for="notes">
+        Notes
+        <textarea id="notes" name="notes" rows="4" cols="60"></textarea>
+      </label>
+	  </fieldset>
+	  <fieldset id="submitbutton">
+      <input type="submit" id="submit" value="Submit Request" />
+	  </fieldset>
     </article>
     <footer>
       <p>548 N. 58th St. &#8226; Omaha, NE 68132 &#8226; (402) 555-9736</p>
