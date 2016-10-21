@@ -44,3 +44,27 @@ legend span {
 }
 
 /* New CSS below this line. */
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#contactinfo input {
+  position: absolute;
+  left: 100px;
+}
+
+#nameinput, #emailinput {
+  width: 30em;
+}
+
+#phoneinput {
+  width: 12em;
+}
+
+input:focus, textarea:focus {
+  background-color: #e3d5ba;
+}

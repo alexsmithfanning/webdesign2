@@ -8,7 +8,7 @@
   <meta charset="utf-8" />
   <title>Hotel Natoma - Reservations</title>
   <link type="text/css" rel="stylesheet" media="screen" href="natoma.css" />
-  <link type="text/css" rel="stylesheet" media="print" href="hnprint.css" />
+  <link type="text/css" rel="stylesheet" media="screen" href="hnform.css" />
   <link rel="shortcut icon" href="favicon.ico" />
   <!-- I refuse to use workarounds to support a dead browser. -->
 </head>
@@ -31,6 +31,54 @@
     </nav>
     <article>
       <h2 id="main">Reservations</h2>
+      <form>
+        <fieldset id="contactinfo">
+          <legend>Contact Information</legend>
+          <label for="name">
+            Name
+            <input type="text" name="name" id="nameinput" placeholder="First and last name" />
+          </label>
+          <label for="email">
+            Email
+            <input type="email" name="email" id="emailinput" placeholder="address@example.com" />
+          </label>
+          <label for="phone">
+            Phone
+            <input type="text" name="phone" id="phoneinput" />
+          </label>
+        </fieldset>
+        <fieldset id="reservationinfo">
+          <legend>Reservation Information</legend>
+          <fieldset id="partysize">
+            <legend>Party size</legend>
+            <label for="partynumber">
+              Number in your party
+              <input type="text" name="partynumber" id="partynumberinput" />
+            </label>
+            <label for="roomnumber">
+              Number of rooms required
+              <input type="text" name="roomnumber" id="roomnumberinput" />
+            </label>
+          </fieldset>
+          <fieldset id="bedpreference">
+            <legend>Bed preference</legend>
+          </fieldset>
+          <fieldset id="checkin">
+            <legend>Check-in date</legend>
+          </fieldset>
+          <fieldset id="checkout">
+            <legend>Check-out date</legend>
+          </fieldset>
+          <fieldset id="parking">
+            <legend>Parking</legend>
+          </fieldset>
+        </fieldset>
+        <fieldset id="additionalinfo">
+          <legend>Additional Information</legend>
+        </fieldset>
+        <fieldset>
+        </fieldset>
+      </form>
     </article>
     <footer>
       <p id="contact">568 Natoma St. &#8226; San Francisco, CA 94103 &#8226; (415) 555-8378</p>
