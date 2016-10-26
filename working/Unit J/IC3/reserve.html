@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <!-- Copyright © 2016-2017 Alex Smith-Fanning -->
 <!-- Using this text for reference purposes is allowed as long as the intent is non-malicious. -->
 
@@ -33,7 +32,7 @@
       <h2 id="main">Reservations</h2>
       <form>
         <fieldset id="contactinfo">
-          <legend>Contact Information</legend>
+          <legend><span>Contact Information</span></legend>
           <label for="name">
             Name
             <input type="text" name="name" id="nameinput" placeholder="First and last name" />
@@ -48,7 +47,7 @@
           </label>
         </fieldset>
         <fieldset id="reservationinfo">
-          <legend>Reservation Information</legend>
+          <legend><span>Reservation Information</span></legend>
           <fieldset id="partysize">
             <legend>Party size</legend>
             <label for="partynumber">
@@ -62,21 +61,149 @@
           </fieldset>
           <fieldset id="bedpreference">
             <legend>Bed preference</legend>
+            <label for="king">
+              <input type="checkbox" id="kinginput" name="king" />
+              King/Queen
+            </label>
+            <label for="twin">
+              <input type="checkbox" id="twininput" name="twin" />
+              Twin
+            </label>
+            <label for="other">
+              <input type="checkbox" id="otherinput" name="other" />
+              Other/Mix (please specify in Additional Information below)
+            </label>
           </fieldset>
           <fieldset id="checkin">
             <legend>Check-in date</legend>
+            <select id="inmonth" name="inmonth">
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select id="indate" name="indate">
+            	<option value="01">1</option>
+            	<option value="02">2</option>
+            	<option value="03">3</option>
+            	<option value="04">4</option>
+              <option value="05">5</option>
+            	<option value="06">6</option>
+            	<option value="07">7</option>
+            	<option value="08">8</option>
+            	<option value="09">9</option>
+            	<option value="10">10</option>
+            	<option value="11">11</option>
+            	<option value="12">12</option>
+            	<option value="13">13</option>
+            	<option value="14">14</option>
+            	<option value="15">15</option>
+            	<option value="16">16</option>
+            	<option value="17">17</option>
+            	<option value="18">18</option>
+              <option value="19">19</option>
+            	<option value="20">20</option>
+            	<option value="21">21</option>
+            	<option value="22">22</option>
+            	<option value="23">23</option>
+            	<option value="24">24</option>
+            	<option value="25">25</option>
+            	<option value="26">26</option>
+            	<option value="27">27</option>
+            	<option value="28">28</option>
+            	<option value="29">29</option>
+            	<option value="30">30</option>
+            	<option value="31">31</option>
+            </select>
+            <select id="inyear" name="inyear">
+            	<option value="2013">2013</option>
+            	<option value="2014">2014</option>
+            	<option value="2015">2015</option>
+            </select>
           </fieldset>
           <fieldset id="checkout">
             <legend>Check-out date</legend>
+            <select id="outmonth" name="outmonth">
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select id="outdate" name="outdate">
+            	<option value="01">1</option>
+            	<option value="02">2</option>
+            	<option value="03">3</option>
+            	<option value="04">4</option>
+              <option value="05">5</option>
+            	<option value="06">6</option>
+            	<option value="07">7</option>
+            	<option value="08">8</option>
+            	<option value="09">9</option>
+            	<option value="10">10</option>
+            	<option value="11">11</option>
+            	<option value="12">12</option>
+            	<option value="13">13</option>
+            	<option value="14">14</option>
+            	<option value="15">15</option>
+            	<option value="16">16</option>
+            	<option value="17">17</option>
+            	<option value="18">18</option>
+              <option value="19">19</option>
+            	<option value="20">20</option>
+            	<option value="21">21</option>
+            	<option value="22">22</option>
+            	<option value="23">23</option>
+            	<option value="24">24</option>
+            	<option value="25">25</option>
+            	<option value="26">26</option>
+            	<option value="27">27</option>
+            	<option value="28">28</option>
+            	<option value="29">29</option>
+            	<option value="30">30</option>
+            	<option value="31">31</option>
+            </select>
+            <select id="outyear" name="outyear">
+            	<option value="2013">2013</option>
+            	<option value="2014">2014</option>
+            	<option value="2015">2015</option>
+            </select>
           </fieldset>
           <fieldset id="parking">
             <legend>Parking</legend>
+            <label for="parking">
+              I need parking for
+            </label>
+            <input type="text" id="parkinginput" name="parking" />
+            <label for="parking">
+              vehicles
+            </label>
           </fieldset>
         </fieldset>
         <fieldset id="additionalinfo">
-          <legend>Additional Information</legend>
+          <legend><span>Additional Information</span></legend>
+          <label for="additionalinfo">
+            Feedback, special requests, or other information
+            <textarea id="additionalinfoinput" name="additionalinfo" rows="4" cols="55"></textarea>
+          </label>
         </fieldset>
         <fieldset>
+          <input type="submit" id="submit" name="submit" value="Submit" />
         </fieldset>
       </form>
     </article>

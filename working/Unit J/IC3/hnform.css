@@ -45,11 +45,13 @@ legend span {
 
 /* New CSS below this line. */
 
-label {
+#contactinfo label {
   display: block;
   position: relative;
   margin-left: 12px;
   margin-right: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #contactinfo input {
@@ -67,4 +69,40 @@ label {
 
 input:focus, textarea:focus {
   background-color: #e3d5ba;
+}
+
+#roomnumberinput, #partynumberinput {
+  margin-right: 20px;
+  width: 3em;
+}
+
+#kinginput, #twininput, #otherinput {
+  margin-left: 25px;
+}
+
+#checkin {
+  float: left;
+  width: 45%;
+}
+
+#checkout {
+  float: right;
+  width: 45%;
+}
+
+#parkinginput {
+  width: 3em;
+}
+
+#additionalinfo, #additionalinfoinput {
+  display: block;
+}
+
+#submit {
+  border: none;
+  text-align: center;
+  background-color: #e3d5ba;
+  font-size: 1.25em;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
