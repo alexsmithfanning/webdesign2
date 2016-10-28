@@ -274,3 +274,47 @@ a:active {
 article li::first-line {
     font-weight: bold;
 }
+
+#submitbutton {
+  text-align: center;
+}
+
+#topicbox label {
+  display: block;
+}
+
+#phoneinput {
+  width: 12em;
+}
+
+#contactmethod label {
+  padding-right: 25px;
+}
+
+#emailinput {
+  width: 30em;
+}
+
+#feedback {
+  display: block;
+}
+
+#fnameinput,
+#lnameinput {
+  width: 20em;
+}
+
+#contactinfo label {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+}
+
+#contactinfo input {
+  position: absolute;
+  left: 130px;
+}
+
+#additionalinfo {
+  clear: both;
+}
