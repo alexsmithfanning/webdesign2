@@ -25,14 +25,23 @@ aside {
 article {
   float: right;
   width: 700px;
-  border-left: 20px solid #633;
   background: #fdf5e6;
+  border-left: 10px solid #633;
+}
+
+audio {
+  margin: 0 auto;
 }
 
 body {
   font-family: verdana, arial, helvetica, sans-serif;
   margin: 0 auto;
   padding: 0;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -43,6 +52,12 @@ footer {
   padding: 0.25em;
   clear: both;
   border-top: 1px solid black;
+}
+
+form {
+  padding-top: 10px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -73,6 +88,10 @@ h3 {
   font-size: 1.25em;
 }
 
+legend {
+  font-weight: bold;
+}
+
 table {
   margin: 1em auto;
   padding: 0;
@@ -90,6 +109,10 @@ th {
   background: #e0e0e0;
 }
 
+#additionalinfo {
+  clear: both;
+}
+
 #box {
   margin: 0 auto;
   padding: 0em;
@@ -97,6 +120,34 @@ th {
   background: #fdf5e6;
   position: relative;
   border: 1px solid black;
+}
+
+#contactinfo label {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+}
+
+#contactinfo input {
+  position: absolute;
+  left: 130px;
+}
+
+#contactmethod label {
+  padding-right: 25px;
+}
+
+#emailinput {
+  width: 30em;
+}
+
+#feedback {
+  display: block;
+}
+
+#fnameinput,
+#lnameinput {
+  width: 20em;
 }
 
 #logo {
@@ -126,11 +177,23 @@ th {
   padding: 0.25em;
 }
 
+#phoneinput {
+  width: 12em;
+}
+
 #skipnav {
   width: 960px;
   text-align: right;
   margin: 0 auto;
   padding: 0;
+}
+
+#submitbutton {
+  text-align: center;
+}
+
+#topicbox label {
+  display: block;
 }
 
 .maintext:first-letter {
