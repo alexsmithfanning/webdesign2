@@ -80,7 +80,7 @@ body {
     font-family: verdana, arial, helvetica, sans-serif;
     margin: 0 auto;
     background: green;
-    background: url("images/grass.jpg");
+    background: url("images/florida.png");
 }
 
 dd {
@@ -112,10 +112,10 @@ figcaption {
 }
 
 footer {
-    background: #ff0;
+    background: red;
     text-align: center;
     clear: right;
-    text-shadow: 1px 1px 1px green;
+    color: white;
 }
 
 footer p {
@@ -188,7 +188,7 @@ th {
 #mainnav {
     color: white;
     text-align: center;
-    background: #F15A24;
+    background: black;
     padding: 0.25em;
 }
 
@@ -317,4 +317,38 @@ article li::first-line {
 
 #additionalinfo {
   clear: both;
+}
+
+.banner {
+    background-color: red;
+}
+
+.temperature-text {
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 100pt;
+    font-family: sans-serif;
+}
+
+.title-text {
+    font-size: 5em;
+    color: red;
+    text-align: center;
+}
+
+.noreason {
+    font-size: 10em;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+.noreason-subtext {
+    font-size: 2em;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1em;
 }
